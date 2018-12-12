@@ -4,8 +4,10 @@ import algo.bookoop.BookAdult;
 import algo.bookoop.BookBuilder;
 
 /**
- * Hello world!
- *
+ * l3Assignment   
+   key point:  0).Publication served as abstract class due to field isbn and publisher were immutable.
+               1). programmer to interface(IContent)
+ *             2). design pattern: decorator, builder, composition
  */
 public class App 
 {
