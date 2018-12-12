@@ -9,7 +9,7 @@ import algo.bookoop.BookBuilder;
                1). programmer to interface(IContent)
  *             2). design pattern: decorator, builder, composition
  
-     ran app and output:
+     ran app and output =>
       this book's content is:
       html_table_of_content
       Chapter 0
