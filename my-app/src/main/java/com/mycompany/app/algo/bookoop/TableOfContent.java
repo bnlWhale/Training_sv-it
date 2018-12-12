@@ -7,6 +7,7 @@ public class TableOfContent implements IContent{
 
     private String html_txt = "html_table_of_content";
 
+
     @Override
     public void addContent(IContent content, String txt, Image image) {
 
