@@ -31,14 +31,24 @@ public class App
 
     public void doSomething() throws MyException{
 
+
+        try{
+
+            int a = 0;
+            int b = 1;
+            int c = b/a;
+
+        }catch (ArithmeticException e){
+            System.out.println(e);
+            throw new MyException("throw MyExeption");
+        }
+
         //try-with-resources
         File file = new File("./tmp.txt");
         try (FileInputStream inputStream = new FileInputStream(file)) {
             // use the inputStream to read a file
 
-            int a = 0;
-            int b = 1;
-            int c = b/a;
+
         }
         catch (FileNotFoundException e) {
             System.out.println("doSomething  FileNotFoundException "+e);
@@ -59,7 +69,7 @@ public class App
             app.doSomething();
         }
         catch (MyException e){
-
+            System.out.println("catch MyExecption");
         }
 
 
