@@ -8,7 +8,7 @@ public class Section implements IContent {
     private java.util.List<IContent> sectionList;
     private int _id;
 
-    public Section(int id){
+    public Section(int id) {
         this._id = id;
         this.sectionList = new ArrayList<IContent>();
     }
@@ -17,7 +17,7 @@ public class Section implements IContent {
     @Override
     public void addContent(IContent content, String txt, Image image) {
 
-        if(content instanceof Paragraph){
+        if (content instanceof Paragraph) {
             this.sectionList.add(content);
         }
 
@@ -30,11 +30,11 @@ public class Section implements IContent {
 
     @Override
     public void processContent() {
-         System.out.println(" section "+this._id);
-         java.util.Iterator<IContent> iterator = sectionList.iterator();
-          while (iterator.hasNext()){
-              IContent content = iterator.next();
-              content.processContent();
-          }
+        System.out.println(" section " + this._id);
+        java.util.Iterator<IContent> iterator = sectionList.iterator();
+        while (iterator.hasNext()) {
+            IContent content = iterator.next();
+            content.processContent();
+        }
     }
 }

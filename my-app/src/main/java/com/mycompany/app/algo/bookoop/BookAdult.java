@@ -3,13 +3,13 @@ package algo.bookoop;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookAdult  extends Publication{
+public class BookAdult extends Publication {
 
 
     private java.util.List<IContent> pubContent;
 
 
-    private float sellPrice=0.0f;
+    private float sellPrice = 0.0f;
 
     public BookAdult(String isbn, String publisher) {
         super(isbn, publisher);
@@ -28,16 +28,15 @@ public class BookAdult  extends Publication{
         return pubContent;
     }
 
-    public void showInfo(){
+    public void showInfo() {
         System.out.println("this book's content is:");
         java.util.Iterator<IContent> iterator = pubContent.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             IContent content = iterator.next();
             content.processContent();
         }
 
     }
-
 
 
 }

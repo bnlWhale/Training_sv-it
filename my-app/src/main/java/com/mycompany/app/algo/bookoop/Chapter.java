@@ -9,7 +9,7 @@ public class Chapter implements IContent {
     private int _id;
 
 
-    public Chapter(int id){
+    public Chapter(int id) {
         this._id = id;
         chapterList = new ArrayList<IContent>();
     }
@@ -17,9 +17,9 @@ public class Chapter implements IContent {
 
     @Override
     public void addContent(IContent content, String txt, Image image) {
-         if(content instanceof Section){
-             chapterList.add(content);
-         }
+        if (content instanceof Section) {
+            chapterList.add(content);
+        }
     }
 
     @Override
@@ -29,9 +29,9 @@ public class Chapter implements IContent {
 
     @Override
     public void processContent() {
-        System.out.println("Chapter "+this._id);
+        System.out.println("Chapter " + this._id);
         java.util.Iterator<IContent> iterator = chapterList.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             IContent content = iterator.next();
             content.processContent();
         }

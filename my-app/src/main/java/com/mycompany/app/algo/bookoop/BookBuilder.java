@@ -2,7 +2,7 @@ package algo.bookoop;
 
 public class BookBuilder {
 
-    public static void builderBook(Publication pub){
+    public static void builderBook(Publication pub) {
         java.util.List<IContent> list = pub.getPubContent();
         // build TOC
         IContent content = new TableOfContent();

@@ -6,7 +6,7 @@ public class Paragraph implements IContent {
 
     private StringBuilder paraTxt;
 
-    public Paragraph(String _paraTxt){
+    public Paragraph(String _paraTxt) {
 
         this.paraTxt = new StringBuilder();
         this.paraTxt.append(_paraTxt);
@@ -14,10 +14,9 @@ public class Paragraph implements IContent {
     }
 
 
-
     @Override
     public void addContent(IContent content, String txt, Image image) {
-        if(txt != null){
+        if (txt != null) {
             this.paraTxt.append(txt);
         }
     }
@@ -30,11 +29,11 @@ public class Paragraph implements IContent {
     @Override
     public void processContent() {
 
-        System.out.println("   "+this.paraTxt.toString());
+        System.out.println("   " + this.paraTxt.toString());
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String paragraphe = "Paragraph";
         return paragraphe;
     }

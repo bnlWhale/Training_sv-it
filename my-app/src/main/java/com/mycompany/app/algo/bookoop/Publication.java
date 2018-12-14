@@ -5,12 +5,11 @@ import java.util.List;
 public abstract class Publication {
 
 
-
     public final String _ISBN;
     public final String _publisher;
 
 
-    public Publication(String isbn, String publisher){
+    public Publication(String isbn, String publisher) {
 
         this._ISBN = isbn;
         this._publisher = publisher;
@@ -26,7 +25,7 @@ public abstract class Publication {
 
     abstract public List<IContent> getPubContent();
 
-    abstract public  void  showInfo();
+    abstract public void showInfo();
 
 
 }
